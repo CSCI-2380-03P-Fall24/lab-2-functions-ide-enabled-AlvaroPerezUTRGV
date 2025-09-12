@@ -30,6 +30,12 @@ void replaceVariable() {
 //output: nothing
 //input: the array of integers and its size
 void printArray() {
+	int size = sizeof(myarray) / sizeof(myarray[0]);
+	cout << "My array elements are: " ;
+	for(int i = 0; i < size; ++i){
+		cout << myarray[i] << " ";
+	}
+	cout << endl;
 	return;
 }
 
