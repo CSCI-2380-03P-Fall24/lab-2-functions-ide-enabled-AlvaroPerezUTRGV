@@ -18,7 +18,7 @@ int locateSmallest(int array[], int start, int end){
 			Smallest_Index = i;
 		}
 	}
-cout << "the smallest index given an interval is: " << 
+cout << "the smallest index given an interval is: " << Smallest_Index ;
 	return Smallest_Index; // fix this!
 }
 
