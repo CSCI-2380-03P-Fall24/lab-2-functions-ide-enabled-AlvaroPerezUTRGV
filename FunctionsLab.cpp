@@ -10,11 +10,11 @@ using namespace std; // making life easier so that we do not need to use std::ci
 // Note that I don't want the smallest value
 
 
-int locateSmallest(int array[], int start, int end){
+int locateSmallest(int myarray[], int start, int end){
 	
 	int Smallest_Index = start ;
 	for(int i = start; i <= end; i++){
-		if (array[i]< array[Smallest_Index]){
+		if (myarray[i]< myarray[Smallest_Index]){
 			Smallest_Index = i;
 		}
 	}
@@ -28,7 +28,14 @@ cout << "the smallest index given an interval is: " << Smallest_Index ;
 //     an int which is the starting index of search,
 //     an int which is the ending point of searchspace
 // function: Search in the array from given start to end index and replace the given target value with 1000
-void replaceVariable() {
+void replaceVariable(int myarray, int target, int start, int end) {
+
+	for(int i = start; i<= end; i++){
+		if(myarray[i] == target){
+			myarray[i] = 1000;
+		}
+	}
+
 	return;
 }
 
