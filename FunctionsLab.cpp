@@ -41,15 +41,15 @@ void replaceVariable(int array[], int target, int start, int end) {
 //write a function called printArray to print out the elements of the given array
 //output: nothing
 //input: the array of integers and its size
-int printArray(int array[]) {
-	int size = sizeof(array) / sizeof(array[0]);
+int printArray(int array[], int size) {
+	size = sizeof(array) / sizeof(array[0]);
 	cout << "My array elements are: " ;
 	for(int i = 0; i < size; ++i){
 		cout << array[i] << " ";
 	}
 	cout << endl;
 	
-	return;
+	return 0;
 }
 
 
